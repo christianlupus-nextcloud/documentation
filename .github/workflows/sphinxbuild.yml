@@ -3,9 +3,6 @@ name: "Pull Request Docs Check"
 on:
   pull_request:
   push:
-    branches:
-      - master
-      - stable*
 
 jobs:
   user_manual:
