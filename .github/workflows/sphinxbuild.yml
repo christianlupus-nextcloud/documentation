@@ -12,6 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Prepare requirements
+      run: |
+        echo "Installing pipenv"
+        pip install pipenv
+        echo "Creating requirements.txt"
+        pipenv requirements > requirements.txt
+        echo "Creation done"
+        echo "Found requirements:"
+        cat requirements.txt
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "user_manual/"
@@ -29,6 +38,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Prepare requirements
+      run: |
+        echo "Installing pipenv"
+        pip install pipenv
+        echo "Creating requirements.txt"
+        pipenv requirements > requirements.txt
+        echo "Creation done"
+        echo "Found requirements:"
+        cat requirements.txt
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "user_manual/"
@@ -38,6 +56,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Prepare requirements
+      run: |
+        echo "Installing pipenv"
+        pip install pipenv
+        echo "Creating requirements.txt"
+        pipenv requirements > requirements.txt
+        echo "Creation done"
+        echo "Found requirements:"
+        cat requirements.txt
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "developer_manual/"
@@ -55,6 +82,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Prepare requirements
+      run: |
+        echo "Installing pipenv"
+        pip install pipenv
+        echo "Creating requirements.txt"
+        pipenv requirements > requirements.txt
+        echo "Creation done"
+        echo "Found requirements:"
+        cat requirements.txt
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "admin_manual/"

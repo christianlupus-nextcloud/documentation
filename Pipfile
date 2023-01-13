@@ -8,8 +8,10 @@ verify_ssl = true
 [packages]
 rst2pdf = "*"
 sphinx-rtd-theme = "*"
-Sphinx = "*"
+Sphinx = "==2.4.4"
 Pillow = "*"
+sphinxcontrib-phpdomain = "*"
+jinja2 = "<3.1"
 
 [requires]
 python_version = "3.8"
